@@ -23,7 +23,7 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make 10 dancers each with a random position
-    for (var i = 0; i < 10 ; i++) {
+    for (var i = 0; i < 10; i++) {
       var dancer = new dancerMakerFunction(
         $('body').height() * Math.random(),
         $('body').width() * Math.random(),
