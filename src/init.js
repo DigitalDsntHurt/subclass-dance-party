@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   $('.lineUpButton').on('click', function(event) {
-    $('.dancer').css('left', '800px');
+    $('.dancer').css('left', '44px');
   });
 
   $('.disperseButton').on('click', function(event) {
@@ -47,9 +47,9 @@ $(document).ready(function() {
 
 });
 
-$(document).on('mousemove', function(blinky) {
-  $('.blinkyDancer').css({
-    left: blinky.pageX,
-    top: blinky.pageY
-  });
-});
+// $(document).on('mousemove', function(blinky) {
+//   $('.blinkyDancer').css({
+//     left: blinky.pageX,
+//     top: blinky.pageY
+//   });
+// });

@@ -4,11 +4,11 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
-  background-image : url('https://cdn.hipwallpaper.com/i/61/52/CrtQ2j.jpg');
+  background-image : url('https://secure.img1-fg.wfcdn.com/im/90674409/resize-h800%5Ecompr-r85/1143/114377740/Royalty+18%2522+x+18%2522+Ceramic+Patterned+Wall+%2526+Floor+Tile.jpg');
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: rgb(0, 3, 3);
 }
 .title, .addDancerButton, .lineUpButton, .disperseButton{
   padding:5px 12px;
@@ -18,7 +18,7 @@ body, a:link, a:visited, a:active{
 
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: rgb(77, 66, 66);
 }
 .title{
   background-color: #777;
@@ -54,9 +54,16 @@ body, a:link, a:visited, a:active{
 }
 
 .answerDancer {
-  border:10px solid rgb(107, 98, 238);
+  /* border:66px solid rgb(107, 98, 238); */
+  background-color: rgb(107, 98, 238);
+  height: 44px;
+  width: 44px;
   border-radius:0px;
   position:absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 22px;
+  font-weight: bolder;
 }
 
 .prancerDancer {

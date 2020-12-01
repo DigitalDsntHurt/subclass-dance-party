@@ -1,6 +1,7 @@
 var AnswerDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('answerDancer');
+  this.$node.text('Nick :)');
 };
 
 AnswerDancer.prototype = Object.create(Dancer.prototype);
