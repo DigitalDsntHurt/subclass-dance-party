@@ -5,11 +5,11 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
 
   this.step();
-  this.setPosition(this.top, this.left);
+  this.setPosition(top, left);
 };
 
 Dancer.prototype.step = function() {
-  setTimeout(this.step, this.timeBetweenSteps);
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 Dancer.prototype.setPosition = function() {
   var styleSettings = {
