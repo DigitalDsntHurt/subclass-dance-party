@@ -10,22 +10,29 @@ body{
 body, a:link, a:visited, a:active{
   color: rgb(0, 3, 3);
 }
-.title, .addDancerButton, .lineUpButton, .disperseButton{
+.title, .addDancerButton, .addDancersButton, .lineUpButton, .disperseButton{
   padding:5px 12px;
   float:right;
 }
 
-
 .topbar{
   height:32px;
-  background-color: rgb(77, 66, 66);
+  background-color: #4CAF50;
 }
 .title{
   background-color: #777;
 }
-/* .dancer{
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 8px 0px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
 
-} */
 .blinkyDancer {
   border:10px solid red;
   border-radius:10px;
@@ -54,7 +61,6 @@ body, a:link, a:visited, a:active{
 }
 
 .answerDancer {
-  /* border:66px solid rgb(107, 98, 238); */
   background-color: rgb(107, 98, 238);
   height: 44px;
   width: 44px;
