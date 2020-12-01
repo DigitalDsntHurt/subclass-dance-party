@@ -25,3 +25,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.answerDancer {
+  border:10px solid rgb(107, 98, 238);
+  border-radius:0px;
+  position:absolute;
+}
