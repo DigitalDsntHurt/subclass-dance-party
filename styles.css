@@ -21,6 +21,9 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+
+}
+.blinkyDancer {
   border:10px solid red;
   border-radius:10px;
   position:absolute;
@@ -28,5 +31,13 @@ body, a:link, a:visited, a:active{
 .answerDancer {
   border:10px solid rgb(107, 98, 238);
   border-radius:0px;
+  position:absolute;
+}
+.cheesyDancer {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 50px solid green;
   position:absolute;
 }
