@@ -35,5 +35,21 @@ $(document).ready(function() {
   $('.lineUpButton').on('click', function(event) {
     $('.dancer').css('left', '800px');
   });
+
+  $('.disperseButton').on('click', function(event) {
+    $('.dancer').each(function() {
+      let randomHeight = $('body').height() * Math.random();
+      let randomWidth = $('body').width() * Math.random();
+      $(this).css('left', randomWidth);
+      $(this).css('top', randomHeight);
+    });
+  });
+
 });
 
+$(document).on('mousemove', function(blinky) {
+  $('.blinkyDancer').css({
+    left: blinky.pageX,
+    top: blinky.pageY
+  });
+});
