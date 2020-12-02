@@ -48,9 +48,44 @@ $(document).ready(function() {
 
 });
 
-// $(document).on('mousemove', function(blinky) {
-//   $('.blinkyDancer').css({
-//     left: blinky.pageX,
-//     top: blinky.pageY
+
+let beforeCoordinates = {};
+$(document).on('mouseover', '.answerDancer',
+  function() {
+    beforeCoordinates.top = ($(this).css('top'));
+    beforeCoordinates.left = ($(this).css('left'));
+    console.log(beforeCoordinates);
+    // now update top and left
+    $(this).css('color', 'black');
+    $(this).css('background-color', 'yellow');
+  }
+);
+
+$(document).on('mouseout', '.answerDancer',
+  function() {
+    // update top and left with beforeCoordinates
+    $(this).css('color', 'yellow');
+    $(this).css('background-color', 'black');
+
+  }
+);
+// .off( "mouseover" )
+// $(document).off('mouseout', '.answerDancer',
+//   function() {
+//     console.log('HEY');
+//   }
+// );
+
+//$("#hover").unbind("mouseover mouseout");
+// $(document).ready(function() {
+//   $('.answerDancer').mouseover(function() {
+//     $(this).css('color', 'black');
+//     $(this).css('background-color', 'yellow');
 //   });
+//   $('.answerDancer').mouseout(function() {
+//     $(this).css('background-color', 'lightblue');
+//   });
+// //  $("#off").click(function() {
+// //       $("#hover").unbind('mouseover mouseout');
+// //   });
 // });

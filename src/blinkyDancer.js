@@ -9,3 +9,9 @@ BlinkyDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   this.$node.toggle();
 };
+
+/**
+ * if nany answer dancer occupies the same pixels as the current blinky dancer
+ *   blinky dancer stops blinking
+ */
+

@@ -9,7 +9,7 @@ var PrancerDancer = function(top, left, timeBetweenSteps) {
 PrancerDancer.prototype = Object.create(Dancer.prototype);
 PrancerDancer.prototype.constructor = PrancerDancer;
 PrancerDancer.prototype.setWidth = function() {
-  let randomWidth = 15 / 100 * $('body').width() * Math.random();
+  let randomWidth = 18 / 100 * $('body').width() * Math.random();
   this.$node.css('width', randomWidth);
 };
 PrancerDancer.prototype.step = function() {
