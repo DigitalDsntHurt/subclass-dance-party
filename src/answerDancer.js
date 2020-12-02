@@ -7,7 +7,4 @@ var AnswerDancer = function(top, left, timeBetweenSteps) {
 
 AnswerDancer.prototype = Object.create(Dancer.prototype);
 AnswerDancer.prototype.constructor = AnswerDancer;
-// AnswerDancer.prototype.step = function() {
-//   Dancer.prototype.step.call(this);
-//   this.$node.toggle();
-// };
+AnswerDancer.prototype.step = function() {};

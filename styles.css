@@ -34,8 +34,8 @@ body, a:link, a:visited, a:active{
 }
 
 .blinkyDancer {
-  border:10px solid red;
-  border-radius:10px;
+  border:20px solid red;
+  border-radius:20px;
   position:absolute;
 }
 .blinkyDancer {
